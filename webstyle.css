@@ -1,0 +1,89 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: linear-gradient(rgb(21, 177, 21), #baff9a);
+    padding: 1rem 2rem 1rem 3rem;
+}
+
+.left-nav {
+    display: flex;
+    justify-items: start;
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* justify-self: start; */
+    /* column-gap: 50px; */
+}
+
+.nav1, .nav2 {
+    margin-right: 10px;
+}
+
+.link {
+    color: rgb(245, 235, 235);
+    text-decoration: none;
+    font-size: 1.5vmax;
+}
+
+.right-nav {
+    grid-template-columns: 1fr;
+    justify-self: end;
+}
+
+.cover {
+    display: flex;
+    background-image: linear-gradient(rgba(243, 86, 159, 0.883), #f04545);
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+
+/* The animation code */
+@keyframes bgChange {
+    from {background-color:  rgb(122, 183, 240);}
+    to {background-color: #2e2e2e;}
+}
+
+/* The element to apply the animation to */
+
+.products {
+    background-color: rgb(122, 183, 240);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+    color: #FFF;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.products:hover {
+    background-color: rgb(122, 183, 240);
+    animation-name: bgChange;
+    animation-duration: 2s;
+}
+
+.box {
+    background-color: #020202;
+    margin: 10px;
+    padding: 50px;
+}
+
+img {
+    transition: all 1s;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.box > img {
+    width: 100%;
+}
+
+footer {
+    background: linear-gradient(#F3AAAA,#febf04);
+    text-align: center;
+    font-size:2em;
+    color: #FFF;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
